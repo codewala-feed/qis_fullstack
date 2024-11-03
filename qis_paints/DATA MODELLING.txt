@@ -1,0 +1,33 @@
+			DATA MODELLING
+Embedded Model
+-------------
+use embedded;
+db.createCollection("students");
+db.students.insertOne({
+ "studentId":1,
+ "course": "python",
+ "contact": {"name":"ram", "mail":"ram@gmail.com", "phn":9000},
+ "branch": "csit_bs"
+});
+--------------------------------------------------------------
+Reference Model
+--------------
+use reference;
+db.createCollection("students");
+db.createCollection("contacts");
+db.contacts.insertOne({"name":"ram", "mail":"ram@gmail.com", "phn":9000});
+db.contacts.insertOne({"name":"nick", "mail":"nick@gmail.com", "phn":8000});
+
+db.students.insertOne({
+ "studentId":1,
+ "course": "python",
+ "contact": ObjectId('66e9012e4c4661872e157524'),
+ "branch": "csit_bs"
+});
+
+
+---TO SEE THE REFENCED DATA BETWEEN MULTIPLE COLLECTIONS---
+
+var stu1 = db.students.findOne({"studentId":1});
+db.contacts.findOne({"_id":stu1.contact});
+

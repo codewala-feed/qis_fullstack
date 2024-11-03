@@ -1,0 +1,84 @@
+Angular vs other
+ - heavy applications
+ - google 
+ - single page application
+ - two way data binding
+
+
+Download from below Link and install it
+  https://nodejs.org/en/download/prebuilt-installer
+
+1.Create one folder and open it with visual studio code
+2.click on terminal and select new terminal
+   shift from powershell to command prompt in visual studio code terminal 
+3. after 2nd step, use below commands in the same terminal
+   node --version
+   npm --version
+npm install -g @angular/cli
+
+4.close vs code and open again, click on terminal and select new terminal
+  shift from powershell to command prompt in visual studio code terminal
+
+5.to generate angular project type below command
+  ng new ece3
+ > select CSS and press Enter
+   for any (y/N) questions, type N and Enter
+
+6. To run the generated angular project follow below steps:
+    cd ece3
+    ng serve
+  open the link in any browser http://localhost:4200/
+
+7. stop the server by pressing ctrl + c in terminal
+-----------------------------------------------------------
+
+
+
+
+
+REMOVE entire app.component.html code and write one h1 tag
+<h1>This is app.comoponent.html page output</h1>
+save changes and run the server with ng serve, see the output
+
+
+
+
+
+
+  -----------------------------------------------------------
+1. To generate component use below command in vs code terminal
+   ng generate component first
+
+to write any component selector, use app.component.html
+if error occurs:
+    to import any component details, use app.component.ts
+
+2. import FirstComponent in app.component.ts by following below steps:
+  paste below line at top of app.component.ts page [3rd line]
+    import { FirstComponent } from './first/first.component';
+
+  paste below word in 'imports' [8th line]
+       , FirstComponent
+  
+   type below selector in app.component.html 
+      <app-first></app-first>
+
+3. To run application, 
+       ng serve
+
+
+
+
+
+
+- string interpolation: sending data from ts->html {{variable}}
+- event binding : adding events
+- property binding: adding properties
+- *ngIf (ng directives)  --> to use it, must import CommonModule
+
+
+
+
+
+
+

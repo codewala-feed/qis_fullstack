@@ -1,0 +1,114 @@
+<!DOCTYPE Html>
+
+<html> 
+
+  <head> 
+    <title> Cse4 </title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/style.js"></script>
+  </head>
+
+  <body>
+
+      <div class="red-div">
+          <h1>Hello</h1>
+      </div>
+
+      <div class="green-div">
+          <h1>Python</h1>
+      </div>
+
+      <div class="blue-div">
+
+          <div class="orange-div">
+              <h1>Hello</h1>
+          </div>
+
+          <div class="white-div">
+              <h1>Python</h1>
+          </div>
+
+          <div class="pink-div">
+              <h1>FullStack</h1>
+          </div>
+
+      </div>
+
+
+        <div class="picture">
+            <img src="./images/harrypotter.png" alt="no img">
+        </div>
+
+        <div class="register-div">
+            <h1>Register Form</h1>
+            <form action="">
+                <input type="text" name="f_name" placeholder="F_Name">
+                <input type="text" name="l_Name" placeholder="L_Name">
+                <input type="number" name="phone" placeholder="Phone">
+                <input type="email" name="email" placeholder="Email">
+                <input type="password" name="password" placeholder="password">
+                <textarea placeholder="Address" name="address"></textarea>
+                <input id="register-btn" type="submit" value="Register">
+            </form>
+        </div>
+        
+        <div class="login-div">
+            <h1>Login Form</h1>
+            <form action="">
+                <input type="email" placeholder="email">
+                <input type="password" placeholder="password">
+                <input id="login-btn" type="submit" value="Login">
+            </form>
+        </div>
+
+        <div class="temp-div">
+            <button id="btn-1" 
+            onmouseenter="entered()"
+            onmouseleave="leaving()"
+            onclick="clicked()"
+            >Button1</button>
+
+            <button id="btn-2"
+             onmouseleave="leaving()"
+             ondblclick="doubleClicked()"
+             oncontextmenu="rightClick()"
+            >Button2</button>
+
+            <button id="btn-3"
+            onmousedown="hold()"
+            onmouseup="release()"
+            >Button3</button>
+
+            <button id="btn-4">Button4</button>
+
+        </div>
+
+        <script>
+            btn4 = document.getElementById("btn-4")
+            btn4.addEventListener("click", function(){
+                btn4.style.border = "4px solid black";
+            })
+
+            btn4.addEventListener("mouseleave", function(){
+                btn4.style.border = "2px solid black";
+                btn4.style.boxShadow = "none";
+            })
+
+            btn4.addEventListener("contextmenu", function(){
+                btn4.style.boxShadow = "6px 6px 4px green";
+            })
+            
+            bodyTag = document.getElementsByTagName("body")[0]
+            window.addEventListener("mousedown", function(){
+                bodyTag.style.backgroundColor = "green";
+            })
+
+            window.addEventListener("mouseup", function(){
+                bodyTag.style.backgroundColor = "white";
+            })
+
+        </script>
+
+  </body>
+
+</html>

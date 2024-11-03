@@ -1,0 +1,73 @@
+                                 DATA MODELLING (Embedded, Reference)
+
+---Embedded Model---
+
+use embedded;
+db.createCollection("students");
+
+db.students.insertOne({
+ "studentId": 1,
+ "branch": "Cse",
+ "course": "python",
+ "contact": {
+	     "name":"nick",
+	     "email":"nick@gmail.com",
+	     "number":9000100
+	   }
+});
+
+
+
+
+--- Reference Model ---
+
+---contacts---
+use reference;
+db.createCollection("contacts");
+db.contacts.insertMany([
+	{"name":"nick", "email":"nick@gmail.com", "number":90000},
+	{"name":"ram", "email":"ram@gmail.com", "number":80000}
+	]);
+
+---AFTER EXECUTING ABOVE QUERIES, YOU'LL GET ObjectId FOR DOCUMENTS IN CONTACTS COLLECTION---
+--contacts--
+{
+  _id: ObjectId('66de9bef8ca708bc1433a04c'),
+  name: 'nick',
+  email: 'nick@gmail.com',
+  number: 90000
+}
+
+{
+  _id: ObjectId('66de9bef8ca708bc1433a04d'),
+  name: 'ram',
+  email: 'ram@gmail.com',
+  number: 80000
+}
+
+---BY COPYING YOUR ACTUAL ObjectId from contacts collection and create below collections---
+
+--students--
+db.createCollection("students");
+db.students.insertOne({
+ "studentId": 1,
+ "branch": "Cse",
+ "course": "python",
+ "contactId": ObjectId('66de9bef8ca708bc1433a04c')
+});
+
+db.students.insertOne({
+ "studentId": 2,
+ "branch": "Cse",
+ "course": "dsa",
+ "contactId": ObjectId('66de9bef8ca708bc1433a04d')
+});
+
+
+
+---TO QUERY THE COLLECTIONS BY USING REFERENCES OF CONTACT ID, USE BELOW QUERIES ---
+var stu1 = db.students.findOne({"studentId":1});
+db.contacts.findOne({"_id": stu1.contactId});
+
+var stu2 = db.students.findOne({"studentId":2});
+db.contacts.findOne({"_id": stu2.contactId});

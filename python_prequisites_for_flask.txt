@@ -1,0 +1,23 @@
+1. primitive
+   - int, float, str, bool
+
+2. composite
+   - list, tuple, set, dictionary
+
+3. conditional statements (if, elif, else)
+
+4. unconditional statements (pass, break, continue)
+
+5. functions/operations of all composite data types (list, tuple, set, dictionary)
+    Also practice how to add and remove data to empty list, set, dictionary
+
+6. list of tuples and sorting them based on index
+
+7. list comprehension
+
+8. for loop, while loop
+
+9. functions (return, non-return, parameterized) 
+   lambda function
+
+10. Exception Handling (try, except)

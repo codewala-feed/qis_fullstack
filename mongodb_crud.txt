@@ -1,0 +1,49 @@
+----------Download and install it----------------
+
+https://www.mongodb.com/try/download/community
+
+
+--------------------------------------------
+
+
+---creating database---
+   use csit_bs;
+
+---creating collection---
+   db.createCollection("student");
+
+--Refresh the page and see collection name---
+
+---creating Document---
+   db.student.insertOne({"id":1, "Name":"nick"});
+   db.student.insertMany([
+	{"id":2, "name":"ram"},
+	{"id":3, "name":"ravi"}
+	]);
+
+---Reading Documents from collection---
+   db.student.find();
+
+---Updating Documents from collection---
+  db.student.updateOne({"id":3}, {"$set":{"name":"rahul"}});
+  db.student.updateOne({"_id": ObjectId("66d95407d7fdb453da3f07a9")},
+		     {"$set":{"name":"kiran"}});
+
+  db.student.updateMany({"id":3}, {"$set":{"name":"suresh"}});
+
+---Deleting Documents from collection---
+  db.student.deleteMany({"id":3});
+  db.student.deleteOne({"_id":ObjectId("66d951987cc8facdb2289937")});
+
+
+
+
+
+
+
+
+
+
+
+
+

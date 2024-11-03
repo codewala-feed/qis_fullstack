@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html>
+  <head> 
+     <title> CSIT_BS </title>
+     <link rel="stylesheet" href="./css/style.css">
+     <script src="./js/style.js"></script>
+  </head>
+  
+  <body>
+    <div class="first-div">
+        <h1>First</h1>
+    </div>
+
+    <div class="second-div">
+        <h1>Second</h1>
+    </div>
+
+    <div class="blue-div">
+
+        <div class="yellow-div">
+            <h1>Hello</h1>
+        </div>
+
+        <div class="pink-div">
+            <h1>Python</h1>
+        </div>
+
+        <div class="green-div">
+            <h1>Fullstack</h1>
+        </div>
+    </div>
+
+    <div class="bottom-div">
+        <h1>Harry</h1>
+    </div>
+
+    <div class="harry-div">
+        <img src="./images/harrypotter.png" alt="no img">
+    </div>
+
+    <div style="clear: both;"></div>
+
+    <div class="register-div">
+        <h1>Register Form</h1>
+        <form action="">
+            <input name="f_name" type="text" placeholder="F_name">
+            <input name="l_name" type="text" placeholder="L_name">
+            <input name="email" type="email" placeholder="Email">
+            <input name="phone" type="number" placeholder="Phone">
+            <input name="password" type="password" placeholder="Password">
+            <textarea name="address" placeholder="Address"></textarea>
+            <input id="register-btn" type="submit" value="Register">
+        </form>
+    </div>
+
+    <div class="login-div">
+        <h1>Login Form</h1>
+        <form action="">
+            <input name="email" type="email" placeholder="Email">
+            <input name="password" type="password" placeholder="Password">
+            <input id="login-btn" type="submit" value="Login">
+        </form>
+    </div>
+
+    <div class="temp-div">
+        <button id="btn-1"
+         onmouseenter="entered()"
+         onmouseleave="leaved()"
+        >Click</button>
+        
+        <button id="btn-2" ondblclick="doubleClicked()">Click2</button>
+
+        <button id="btn-3"
+         onclick="change()"
+         oncontextmenu="info()" 
+         onmousedown="hold()" 
+         onmouseup="release()"
+        >click3</button>
+            
+        <button id="btn-4">Click4</button>
+
+    </div>
+    <script>
+        btn4 = document.getElementById("btn-4")
+        btn4.addEventListener("mouseenter", function(){
+          btn4.style.boxShadow = "10px 10px 10px green";
+          btn4.style.fontSize = "30px";
+        })
+        btn4.addEventListener("mouseleave", function(){
+            btn4.style.boxShadow = "none";
+            btn4.style.fontSize = "24px";
+            btn4.style.background = "none";
+            btn4.style.color = "black";
+            btn4.style.fontWeight = "500";
+        })
+        btn4.addEventListener("contextmenu", function(){
+            btn4.style.background = "linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(images/harrypotter.png)";
+            btn4.style.backgroundSize = "100% 100%";
+            btn4.style.color = "aliceblue";
+            btn4.style.fontWeight = "900";
+        })
+    </script>
+  </body>
+</html>

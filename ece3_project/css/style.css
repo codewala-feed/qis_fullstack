@@ -1,0 +1,65 @@
+body{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../images/background1.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.title-div{
+    float: right;
+    width: 20%;
+    text-align: center;
+    color: rgb(201, 7, 7);
+    font-size: 28px;
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+}
+
+.title-div h1{
+    border: 3px solid black;
+}
+
+.master-div{
+    float: left;
+    width: 100%;
+    margin: 5% 0% 0% 0%;
+}
+
+.child-div{
+    float: left;
+    width: 22.5%;
+    border: 6px solid aliceblue;
+    text-align: center;
+    margin: 0% 0% 0% 1.4%;
+    padding: 7.5% 0% 7.5% 0%;
+    font-size: 28px;
+    color: aliceblue;
+}
+
+a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.bottom-div{
+    float: left;
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    text-transform: capitalize;
+    color: aliceblue;
+    margin: 0% 0% 2% 0%;
+}
+
+.img-div{
+    float: left;
+    width: 100%;
+    margin: 10% 0% 0% 0%;
+}
+
+img{
+    float: left;
+    width: 22.5%;
+    height: 500px;
+    margin: 0% 0% 3% 1.5%;
+    border: 6px solid black;
+}

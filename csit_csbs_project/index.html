@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project</title>
+        <script src="./js/style.js"></script>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="title-div">
+            <h1>Marvel</h1>
+        </div>
+
+        <div style="clear: both;"></div>
+
+        <div class="parent-div">
+            <div onmouseenter="entered()" onmouseleave="leaving()" id="c1" class="child-div">
+                <a href="./steeve.html"><h1>Steeve</h1></a>
+            </div>
+
+            <div id="c2" class="child-div">
+                <a href="./tony.html"><h1>Tony</h1></a>
+            </div>
+
+            <div id="c3" class="child-div">
+                <a href="./thor.html"><h1>Thor</h1></a>
+            </div>
+
+            <div id="c4" class="child-div">
+                <a href="./hulk.html"><h1>Hulk</h1></a>
+            </div>
+
+        </div>
+
+        <script>
+            c2 = document.getElementById("c2")
+            c3 = document.getElementById("c3")
+            c4 = document.getElementById("c4")
+
+            c2.addEventListener("mouseenter", function(){
+                c2.style.backgroundColor = "rgba(198, 209, 219, 0.503)"
+            })
+            c2.addEventListener("mouseleave", function(){
+                c2.style.backgroundColor = "transparent";
+            })
+
+            c3.addEventListener("mouseenter", function(){
+                c3.style.backgroundColor = "rgba(198, 209, 219, 0.503)"
+            })
+            c3.addEventListener("mouseleave", function(){
+                c3.style.backgroundColor = "transparent";
+            })
+
+            c4.addEventListener("mouseenter", function(){
+                c4.style.backgroundColor = "rgba(198, 209, 219, 0.503)"
+            })
+            c4.addEventListener("mouseleave", function(){
+                c4.style.backgroundColor = "transparent";
+            })
+
+        </script>
+
+    </body>
+
+</html>

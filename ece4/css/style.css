@@ -1,0 +1,160 @@
+
+.blue-div{
+    float: left;
+    width: 100%;
+    background-color: blue;
+    text-align: center;
+    font-size: 28px;
+    /* margin: 5% 0% 0% 0%;
+    padding: 2% 0% 2% 0%; */
+}
+
+.red-div{
+    float: left;
+    width: 25%;
+    background-color: red;
+    margin: 0% 2% 0% 0%;
+    border: 8px solid black;
+}
+
+.green-div{
+    float: left;
+    width: 25%;
+    background-color: green;
+    margin: 0% 2% 0% 0%;
+    border: 8px solid black;
+}
+
+
+.pink-div{
+    float: left;
+    width: 42%;
+    background-color: pink;
+    border: 8px solid black;
+}
+
+.footer-div{
+    float: left;
+    width: 98%;
+    background-color:aquamarine;
+    font-size: 24px;
+    text-align: center;
+    margin: 2% 0% 0% 0%;
+    border: 8px solid black;
+}
+
+.register-div{
+    float: left;
+    width: 50%;
+    background-color: burlywood;
+    text-align: center;
+    margin: 2% 0% 0% 5%;
+    font-size: 30px;
+    padding: 0% 0% 5% 0%;
+    border: 10px solid black;
+}
+.register-div input, .register-div textarea{
+    float: left;
+    width: 90%;
+    margin: 0% 0% 0% 3%;
+    padding: 1%;
+    font-size: 22px;
+    border: 4px solid black;
+}
+
+#register-btn{
+    float: left;
+    width: 35%;
+    margin: 5% 0% 0% 30%;
+}
+
+textarea{
+    margin: 0% 0% 2% 3%;
+}
+
+
+.login-div{
+    float: left;
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.699);
+    margin: 25% 0% 0% 2%;
+    color: aliceblue;
+    text-align: center;
+}
+
+.login-div h1{
+    font-size: 50px;
+}
+
+.login-div input{
+    float: left;
+    width: 80%;
+    margin: 0% 0% 5% 10%;
+    font-size: 28px;
+    background-color: transparent;
+    color: aliceblue;
+    border: 3px solid aliceblue;
+}
+
+#login-btn{
+    float: left;
+    width: 35%;
+    margin: 0% 0% 5% 35%;
+    border-radius: 10%;
+}
+
+.img-div{
+    float: left;
+    width: 100%;
+}
+
+.img-div img{
+    float: left;
+    width: 18%;
+    height: 400px;
+    margin: 5% 0% 5% 1%;
+    border: 4px solid black;
+}
+
+
+.first{
+    float: left;
+    width: 45%;
+    border: 4px solid black;
+    margin: 0% 0% 5% 0%;
+}
+
+.first img{
+    float: left;
+    width: 50%;
+}
+
+.second{
+    float: right;
+    width: 45%;
+    border: 4px solid black;
+    margin: 0% 0% 5% 0%;
+
+}
+
+.second img{
+    float: left;
+    width: 50%;
+}
+
+
+.temp-div{
+    float: left;
+    width: 50%;
+    border: 4px solid black;
+    margin: 0% 0% 45% 25%;
+}
+
+.temp-div button{
+    float: left;
+    width: 30%;
+    margin: 5% 0% 5% 35%;
+    font-size: 30px;
+    padding: 2% 0% 2% 0%;
+    background-color: transparent;
+}

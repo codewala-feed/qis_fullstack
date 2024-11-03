@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./temp.js"></script>
+</head>
+<body>
+    <div class="temp-div">
+        <button id="btn-1" 
+         onmouseleave="original()"
+         onclick="clicked()" 
+         onmouseover="colorChange()"
+        >Button1</button>
+
+        <button id="btn-2" 
+         onmousedown="hold()" 
+         onmouseup="release()" 
+         ondblclick="double()" 
+         oncontextmenu="rightClicked()" 
+        >Button2</button>
+
+        <button id="btn-3">Button3</button>
+    </div>
+    <script>
+        btn3 = document.getElementById("btn-3")
+        btn3.addEventListener("click", function(){
+            btn3.style.backgroundColor = "green";
+        })
+
+        btn3.addEventListener("mouseleave", function(){
+            btn3.style.backgroundColor = "transparent";
+        })
+
+        btn3.addEventListener("mousedown", function(){
+            btn3.style.boxShadow = "10px 10px 10px green";
+        })
+
+        btn3.addEventListener("mouseup", function(){
+            btn3.style.boxShadow = "none";
+
+        })
+    </script>
+    </body>
+</html>

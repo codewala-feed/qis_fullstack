@@ -1,0 +1,152 @@
+
+.first-div{
+    float: left;
+    width: 50%;
+    background-color: aquamarine;
+    text-align: center;
+    padding: 2% 0% 5% 0%;
+    margin: 2% 0% 0% 0%;
+}
+
+.second-div{
+    float: right;
+    width: 50%;
+    background-color: burlywood;
+    text-align: center;
+    padding: 2% 0% 5% 0%;
+    margin: 2% 0% 0% 0%;
+
+}
+
+.blue-div{
+    float: left;
+    width: 100%;
+    background-color: blue;
+    text-align: center;
+    margin: 2% 0% 0% 0%;
+    padding: 2% 0% 2% 0%;
+    border: 4px solid black;
+
+}
+
+.yellow-div{
+    float: left;
+    width: 25%;
+    background-color: yellow;
+    margin: 0% 2% 0% 1%;
+    border: 4px solid black;
+
+
+}
+
+.pink-div{
+    float: left;
+    width: 25%;
+    background-color: pink;
+    margin: 0% 2% 0% 0%;
+    border: 4px solid black;
+    border-radius: 20%;
+
+}
+
+.green-div{
+    float: left;
+    width: 42%;
+    background-color: aquamarine;
+    border: 4px solid black;
+
+}
+
+.bottom-div{
+    float: left;
+    width: 25%;
+    background-color: greenyellow;
+    margin: 5% 0% 0% 35%;
+    text-align: center;
+    font-size: 28px;
+    border: 6px solid black;
+    border-radius: 20%;
+}
+
+.harry-div{
+    float: left;
+    width: 100%;
+    margin: 5% 0% 5% 0%;
+}
+
+.bottom-div h1{
+    border: 4px solid black;
+}
+
+.harry-div img{
+    float: left;
+    width: 100%;
+    height: 300px;
+    border: 6px solid black;
+}
+
+.register-div{
+    float: left;
+    width: 50%;
+    background-color: antiquewhite;
+    margin: 0% 0% 5% 5%;
+    text-align: center;
+    border: 6px solid black;
+}
+
+.register-div input, .register-div textarea{
+    float: left;
+    width: 70%;
+    margin: 0% 0% 3% 15%;
+    font-size: 24px;
+    border: 2px solid black;
+}
+
+#register-btn{
+    float: left;
+    width: 35%;
+    margin: 0% 0% 5% 35%;
+    border-radius: 10%;
+}
+
+.login-div{
+    float: left;
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.638);
+    color: aliceblue;
+    margin: 10% 0% 0% 3%;
+    text-align: center;
+}
+
+.login-div input{
+    float: left;
+    width: 70%;
+    margin: 0% 0% 5% 18%;
+    font-size: 24px;
+    background-color: transparent;
+    color: aliceblue;
+    border: 3px solid aliceblue;
+}
+
+#login-btn{
+    float: left;
+    width: 35%;
+    margin: 0% 0% 5% 35%;
+    border-radius: 10%;
+}
+
+.temp-div{
+    float: left;
+    width: 50%;
+    margin: 10% 0% 25% 25%;
+    border: 4px solid black;
+}
+
+button{
+    float: left;
+    width: 40%;
+    border: 3px solid black;
+    font-size: 24px;
+    margin: 5% 5% 5% 30%;
+    padding: 4%;
+}

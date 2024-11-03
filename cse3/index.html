@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html>
+  <head> 
+     <title> CSE3 </title>
+     <link rel="stylesheet" href="./css/style.css">
+     <script src="./js/style.js"></script>
+  </head>
+
+  <body>
+
+    <div class="red-div">
+        <h1>Hello</h1>
+    </div>
+
+    <div class="green-div">
+        <h1>Python</h1>
+    </div>
+
+
+    <div class="blue-div">
+        <div class="sub-1">
+            <h1>Hello</h1>
+        </div>
+
+        <div class="sub-2">
+            <h1>Python</h1>
+        </div>
+
+        <div class="sub-3">
+            <h1>FullStack</h1>
+        </div>
+    </div>
+
+    <div class="hogwarts">
+        <h1>Hogwarts</h1>
+    </div>
+
+    <div class="hogwarts-img">
+        <img src="./images/college4.jpg" alt="">
+    </div>
+
+    <div style="clear: both;"></div>
+
+    <div id="bg-div" class="temp-div">
+        <button id="btn-1"
+         onmouseenter="entered()"
+         onmouseleave="exit()"
+         ondblclick="doubleClicked()"
+         oncontextmenu="shadow()"
+        >Button1</button>
+        <button id="btn-2"
+         onmousedown="hold()"
+         onmouseup="release()"
+         onmouseenter="change()"
+         onmouseleave="original()"
+        >Button2</button>
+
+        <button id="btn-3" >Button3</button>
+        
+    </div>
+
+    <div style="clear: both;"></div>
+
+    <div class="sample">
+        <form action="">
+            <input type="text" id="text1" value="" placeholder="Enter Sample Text:">
+        </form>
+
+        <p id="output" style="font-size: 24px;">Your Output: </p>
+    </div>
+
+    <script>
+        btn3 = document.getElementById("btn-3")
+        btn3.addEventListener("mouseenter", function(){
+            btn3.style.backgroundColor = "green";
+        })
+
+        btn3.addEventListener("mouseleave", function(){
+            btn3.style.backgroundColor = "transparent";
+        })
+
+        bodyTag = document.getElementsByTagName("body")[0]        
+        window.addEventListener("contextmenu", function(){
+            bodyTag.style.backgroundColor = "green";
+        })
+
+        window.addEventListener("dblclick", function(){
+            bodyTag.style.backgroundColor = "white";
+        })
+
+        t1 = document.getElementById("text1")
+        inp1 = document.getElementsByTagName("input")[0]
+
+        t1.addEventListener("focus", function(){
+            inp1.style.backgroundColor = "green";
+        })
+        
+        t1.addEventListener("blur", function(){
+            inp1.style.backgroundColor = "white";
+        })
+
+        t1.addEventListener("input", function(Event){
+            console.log(Event);
+            document.getElementById("output").innerText += Event.data;
+        })
+
+    </script>
+  </body>
+
+</html>
